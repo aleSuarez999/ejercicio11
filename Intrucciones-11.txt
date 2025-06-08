@@ -1,0 +1,43 @@
+La tienda en línea "Electro" quiere implementar una funcionalidad en su sitio web que permita a los 
+clientes buscar productos por su nombre y mostrar los resultados en una lista. 
+
+Para esto, se requiere implementar un formulario que capture el nombre del producto a buscar,
+y una función en JavaScript que se encargue de realizar la búsqueda y mostrar los resultados.
+
+Lógica de negocio:
+
+* La tienda "Electro" tiene una base de datos con los productos que ofrece.
+* La búsqueda se realiza por nombre de producto, y puede haber múltiples resultados.
+* Si no hay resultados para la búsqueda, se mostrará un mensaje indicando que no se encontraron productos.
+
+Datos de entrada:
+
+* Nombre del producto a buscar, ingresado por el usuario en el formulario.
+
+Datos de salida:
+
+* Lista de productos encontrados, con su nombre y precio.
+* Mensaje indicando que no se encontraron productos.
+
+Requerimientos funcionales:
+
+* El formulario debe tener un campo para ingresar el nombre del producto a buscar.
+* Al hacer clic en el botón "Buscar", se debe llamar a una función en JavaScript que realice la búsqueda.
+* Los resultados de la búsqueda deben mostrarse en una lista.
+* Si no se encuentra ningún producto, se debe mostrar un mensaje indicando que no se encontraron resultados.
+
+Requerimientos no funcionales:
+
+* La búsqueda debe realizarse utilizando Promesas y la API Fetch de JavaScript.
+* La lista de productos encontrados debe tener un diseño atractivo y legible.
+
+Pasos a realizar para resolver el ejercicio:
+
+1.Crear el formulario HTML con un campo para ingresar el nombre del producto y un botón para realizar la búsqueda.
+2.Agregar un evento al botón "Buscar" para que llame a la función que realizará la búsqueda.
+3.Crear la función en JavaScript que se encargará de realizar la búsqueda utilizando Promesas y la API Fetch.
+4.En la función de búsqueda, enviar una solicitud Fetch a la base de datos de la tienda, pasando el nombre del producto como parámetro.
+5.Cuando se reciba la respuesta de la solicitud Fetch, verificar si se encontraron productos o no.
+6.Si se encontraron productos, crear dinámicamente una lista HTML con los productos encontrados y agregarla al DOM.
+7.Si no se encontraron productos, mostrar un mensaje indicando que no se encontraron resultados.
+8.Agregar estilos CSS a la lista de productos encontrados para que tenga un diseño atractivo y legible.

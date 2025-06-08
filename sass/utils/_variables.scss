@@ -1,0 +1,65 @@
+
+//Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+$grid-width: (
+  xs: 360px,
+  sm: 520px,
+  md: 720px,
+  lg: 880px,
+  xl: 1120px,
+  xxl: 1200px
+);
+
+/* SCSS HEX */
+$color1:rgb(66, 103, 128);
+$color2: #274c77ff;
+$color3: #e7ecefff;
+$color4: rgb(120, 151, 177);
+$color5: rgb(146, 186, 204);
+$color6: rgb(149, 142, 158);
+$color7: rgb(40, 69, 95);
+// Colors
+$primary-color: $color1;
+$strong-primary-color:$color2;
+$light-primary-color:$color4;
+$superlight-primary-color: $color5;
+//$secondary-color: #2EC4B6;
+$secondary-color: $color6;
+$strong-secondary-color: $color7;
+$light-secondary-color: rgb(230, 227, 227);
+
+$black-color: #111;
+$white-color: #edebeb;
+
+$success-color: #2a892a;
+$danger-color: #d02121;
+$warning-color: #c1aa17;
+
+//Layout
+$body-bg-color: $light-secondary-color;
+$navbar-bg-color: $strong-secondary-color;
+
+//Grid
+$grid-columns: 12;
+
+//Spacings
+$spacings: (
+    m: margin,
+    mt: margin-top,
+    mb: margin-bottom,
+    ml: margin-left,
+    mr: margin-right,
+    p: padding,
+    pt: padding-top,
+    pb: padding-bottom,
+    pl: padding-left,
+    pr: padding-right,
+);

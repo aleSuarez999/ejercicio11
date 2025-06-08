@@ -1,0 +1,40 @@
+
+.navbar__container {
+    align-items: center;
+    background-color: $navbar-bg-color;
+    box-shadow: 2px 2px 8px 1px $superlight-primary-color;
+    display: flex;
+    min-height: 4.5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    .navbar__navigation {
+        ul {
+            display: flex;
+            gap: 1rem;
+            li {
+                list-style: none;
+                a {
+                    text-decoration: none;
+                    color: $white-color;
+                    &:hover {
+                        color: $strong-primary-color;
+                        cursor: pointer;
+                    };
+                    &:visited {
+                        color: $light-primary-color;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: map-get($grid-breakpoints, md)) {
+            display: none;
+        }
+    }
+    .navbar__menu-button {
+        @media screen and (min-width: map-get($grid-breakpoints, md)) {
+            display: none;
+        }
+    }
+}

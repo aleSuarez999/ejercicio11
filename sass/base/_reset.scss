@@ -1,0 +1,31 @@
+
+body {
+    background-color: $body-bg-color;
+    margin: 0;
+    margin-top: 4.5rem;
+    font-size: 1rem ;
+    // margin: 4.5rem 0;
+}
+
+main {
+    min-height: calc(100vh - (4.5rem + 2rem + 64px));
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+h1, h3 {
+    margin: 0;
+}
+h1{
+    color:white;
+ 
+}
+
+header{
+    div{
+        justify-content: center;
+    }
+}

@@ -1,0 +1,33 @@
+
+.footer__container {
+    background-color: $light-primary-color;
+    margin-top: 2rem;
+    height: 64px;
+    // position: fixed;
+    // bottom: 0;
+    // width: 100%;
+    // z-index: 2;
+    .footer__wrapp {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (max-width: map-get($grid-breakpoints, sm) ) {
+            flex-direction: column;
+        }
+        .footer__socialmedia-links {
+            color: $black-color;
+            &:not(:first-child) {
+                margin-left: 1.5rem;
+            }
+            @media screen and (max-width: map-get($grid-breakpoints, sm) ) {
+                margin: 1rem 0;
+            }
+            i {
+                font-size: 1.5rem;
+            }
+            &:hover {
+                color: $strong-primary-color;
+            }
+        }
+    }
+}

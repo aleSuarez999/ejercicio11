@@ -1,0 +1,39 @@
+
+
+.menu__container {
+    display: none;
+    &-visible {
+        background-color: $strong-secondary-color;
+        box-shadow: 2px 2px 8px 8px $light-secondary-color;
+        display: block;
+        height: calc(100vh - 4.5rem);
+        left: 0;
+        position: fixed;
+        padding-right: 1rem;
+        width: 12rem;
+        z-index: 1;
+        @media screen and (min-width: map-get($grid-breakpoints, md)) {
+            display: none;
+        }
+        .menu__navigation {
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                li {
+                    list-style: none;
+                    a {
+                        text-decoration: none;
+                        color: $white-color;
+                        &:hover {
+                            color: $strong-primary-color;
+                        };
+                        &:visited {
+                            color: $light-primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

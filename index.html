@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electro</title>
+    <link rel="stylesheet" href="./sass/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+</head>
+<body>
+    <header class="navbar__container">
+        <div class="container d-flex space-between align-center">
+            <a onclick="onLoadTemplate('home')"><h1>Electro Market</h1></a>
+            <nav class="navbar__navigation">
+                <ul>
+                    <li><a onclick="onLoadTemplate('busqueda')">Busqueda</a></li>
+                  <!--  <li><a onclick="onLoadTemplate('alta')">Alta</a></li>
+                    <li><a onclick="onLoadTemplate('nosotros')">Nosotros</a></li>-->
+                </ul>
+            </nav>
+            <button class="navbar__menu-button btn btn__primary-outline" onclick="handleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    <div class="d-flex">
+        <main class="container">
+            
+
+        </main>
+    </div>
+    <footer class="footer__container">
+        <div class="footer__wrapp container">
+            <h4>Electro</h4>
+            <span>Copyright 2025 ©</span>
+            <div class="d-flex">
+                <a class="footer__socialmedia-links" href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a class="footer__socialmedia-links" href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a class="footer__socialmedia-links" href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+<!--    <script src="./js/delete.js"></script>
+    <script src="./js/edit.js"></script>
+    <script src="./js/upload.js"></script> -->
+    <script src="./js/route.js"></script> 
+    <script src="./js/readData.js"></script>
+</body>
+</html>

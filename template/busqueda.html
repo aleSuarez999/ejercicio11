@@ -1,0 +1,22 @@
+<div class="grid">
+    <div class="col-xl-3 col-lg-3 col-xs-12">
+        <h2>Busqueda</h2>
+        <form id="busqueda" class="form__container" onsubmit="filterProducts(event)">
+            <div class="form__input-group">
+                <label class="form__label" for="fProd" required>Producto</label>
+                <input class="form__input" type="text" name="fProd" id="fProd">
+                <span id="fProd-error" class="form__error"></span>
+            </div>
+            <button type="submit" class="form__submit btn btn__secondary"><i class="fa fa-search" aria-hidden="true"></i>BUSCAR</button>
+        </form>
+    </div>
+    <div id="" class="col-xl-9 col-lg-9 col-xs-12">
+        <h2>Listado de Productos <span id="price"></span></h2>
+        <div id="productsList">
+
+        </div>
+
+
+    </div> 
+
+</div>
